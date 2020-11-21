@@ -1,6 +1,7 @@
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage{verbatim}
+\usepackage{listings}
 
 \title{new crb damage map}
 \author{Aubrey Moore}
@@ -12,31 +13,10 @@
 
 \section{Clone repo}
 
-\begin{verbatim}
-
-
-
-cd /home/aubrey/Desktop/
-git clone https://github.com/aubreymoore/new-crb-damage-map.git
-cd new-crb-damage-map
-\end{verbatim}
+\lstinputlisting[]{copy-data.sh}
 
 \section{Recreate map using original database}
 
-\begin{verbatim}
-cd /home/aubrey/Desktop/new-crb-damage-map
-mkdir original-map
-cd original-map
-cp /home/aubrey/Desktop/Guam-CRB-damage-map-2020-10/Guam01.db .
-cp /home/aubrey/Desktop/Guam-CRB-damage-map-2020-10/make_crb_damage_map.py .
-cp /home/aubrey/Desktop/Guam-CRB-damage-map-2020-10/edit_webmap.py .
-\end{verbatim}
-
 \section{Recreate map using updated database}
-
-\begin{verbatim}
-cd /home/aubrey/Desktop/new-crb-damage-map
-cp -R original-map new-map
-\end{verbatim}
 
 \end{document}
