@@ -1,7 +1,4 @@
 # Usage: ./copy-data.sh
-
-# clone the repo onto the Desktop and change into the new directory
-
 set -e
 mkdir original-map
 cd original-map
