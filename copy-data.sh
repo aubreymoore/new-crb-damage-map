@@ -3,12 +3,6 @@
 # clone the repo onto the Desktop and change into the new directory
 
 set -e
-cd ~/Desktop
-git clone https://github.com/aubreymoore/new-crb-damage-map.git
-cd new-crb-damage-map
-
-# Copy files into a new folder, original-map
-
 mkdir original-map
 cd original-map
 cp /home/aubrey/Desktop/Guam-CRB-damage-map-2020-10/Guam01.db .
