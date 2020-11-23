@@ -17,12 +17,22 @@
 
 \section{Clone repo}
 
-\begin{listing}
+\begin{listing}{listing}
   git clone https://github.com/aubreymoore/new-crb-damage-map.git
   cd new-crb-damage-map
 \end{listing}
 
 \lstinputlisting[]{copy-data.sh}
+
+\lstinputlisting[]{create-tree-vcut-count-table.sql}
+
+\begin{listing}
+	spatialite new-map/Guam01.db < update-trees-table.sql
+        spatialite new-map/Guam01.db < create_grid.sql
+        spatialite new-map/Guam01.db < calc_stats.sql
+\end{listing}
+
+qgis --nologo --code make_crb_damage_map.py
 
 \section{Recreate map using original database}
 
